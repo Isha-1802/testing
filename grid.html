@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        
+        .container{
+            display:grid;
+            height:300px;
+            /* grid-template-columns: 200px 90px 90px 90px; */
+            /* grid-template-columns: repeat(4,200px); */
+            /* grid-template-columns: 2fr 3fr 4fr 1fr; */
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(5, 1fr);
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            /* gap:15px; this means row nd column gap both will have 15px of gap*/
+        }
+        .child{
+            background-color: rgb(218, 86, 108);
+            margin:3px;
+            border-radius: 10px;
+            text-align: center;
+            /* padding: 10px; */
+            margin:5px;
+            color:whitesmoke
+
+        }
+        .child:hover{
+            background-color: rgb(79, 3, 16);
+        }
+        .child1{
+            background-color:rgb(160, 46, 65);
+            border-radius: 10px;
+            margin:3px;
+            /* grid-column-start: 2;
+            grid-column-end:7; */
+            
+        }
+        .child1:hover{
+            background-color: rgb(57, 4, 13);
+        }
+        .child:nth-child(odd):hover{
+            background-color: rgb(221, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">Heyy</div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child1"></div> 
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

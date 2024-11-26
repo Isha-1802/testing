@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link ref="stylesheet" href="new.css">
+        
+    </head>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: #fff; /* White background for form */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #6F4F31; 
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #6F4F31;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="color"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #6F4F31; /* Highlight color */
+    outline: none;
+}
+
+/* Radio buttons styling */
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #6F4F31;
+    margin-bottom: 10px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6F4F31; /* Dark beige color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #9e7e54; /* Slightly lighter beige on hover */
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    background-color: #6F4F31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #9e7e54;
+}
+table{
+    border-collapse: collapse;
+    width:100px;
+    color:#863c0f;
+}
+th ,td{
+    border:2px solid #271711;
+}
+    </style>
+    <body>
+        <h1>Login Page</h1>
+            <form>
+                <div>
+                    <label for="fname">Full Name</label>
+                    <input placeholder="Enter Your Name" id="fname"/>
+                <!-- </div>
+                <div> -->
+                    <label for="age">Age</label>
+                    <input placeholder="Enter Your Age" id="age" required/>
+                </div>
+                <div>
+                    <label for="pass">Password</label>
+                    <input placeholder="Enter password" id="pass">
+                </div>
+                <div>
+                    <h2>Gender</h2>
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="male">
+                    <label for="female">Female</label>
+                    <input type="checkbox" id="female">
+                    <label for="theme">Theme</label>
+                    <input type="color">
+                    <label for="date">Date</label>
+                    <input type="date">
+                </div>
+                <select>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Bihari</option>
+                    <option>Hindi</option>
+                </select>
+                <div>
+                    <input type="file"/>
+                </div>
+                <audio controls autoplay muted loop>
+                    <source src="">
+                    <source src="">
+                </audio>
+                <video controls height="200" width="200">
+                    <source src="ribo copy.mp4">
+                </video>
+                <table>
+                    <thead>
+                        <th>Enrollment 
+                            no.</th>
+                        <th>Name</th>
+                        <th>Mobile no.</th>
+                        <th>College no.</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>Ishita</td>
+                            <td>865893689</td>
+                            <td>6476387468</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>riv</td>
+                            <td>865893689</td>
+                            <td>6476387468</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>khyati</td>
+                            <td>865893689</td>
+                            <td>6476387468</td>
+                        </tr>
+                        <tr><td>12345</td>
+                            <td>Ribo</td>
+                            <td>865893689</td>
+                            <td>6476387468</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </form>
+    </body>
+</html>
